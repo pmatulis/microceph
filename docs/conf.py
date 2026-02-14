@@ -28,11 +28,23 @@ extensions = [
     'myst_parser',
     'sphinxcontrib.jquery',
     'notfound.extension',
-    'versionwarning.extension'
+    'versionwarning.extension',
+    'metapensiero.sphinx.d2',
+    'sphinx.ext.intersphinx'
 ]
 extensions.extend(custom_extensions)
 
 ### Configuration for extensions
+
+# Intersphinx
+# intersphinx_mapping = {
+#     "v116": ("https://docs.isovalent.com/v1.16/", None),
+#     "v115": ("https://docs.isovalent.com/v1.15/", None),
+#     "v114": ("https://docs.isovalent.com/v1.14/", None),
+# }
+# Prevent resolving of references to external locations.
+# https://www.sphinx-doc.org/usage/extensions/intersphinx.html#confval-intersphinx_disabled_reftypes
+# intersphinx_disabled_reftypes = ["*"]
 
 # Additional MyST syntax
 myst_enable_extensions = [
